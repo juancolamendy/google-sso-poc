@@ -16,7 +16,7 @@ client_id = os.getenv("CLIENT_ID")
 client_secret = os.getenv("CLIENT_SECRET")
 secret = os.getenv("SECRET")
 redirect_uri = 'http://localhost:8000/u/google/callback'
-scopes = ["profile", "email"]
+scopes = ["https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile", "openid", "https://www.googleapis.com/auth/business.manage"]
 
 # OAuth Flow Configuration
 client_config = {
